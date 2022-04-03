@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -7,4 +8,44 @@ body{
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo_box{
+        background-image: url("https://tsflights-images.firebaseapp.com/TsFlightsHorizLogo.jpg");
+        height: 80px;
+        width: 250px;
+        background-position: center;
+        background-size: cover;
+        margin: 10px 20px;
+        align-self: flex-start;
+    }
+
+    .link_box{
+        display: flex;
+        height: 80px;
+        margin: 10px;
+        align-items: center;
+        
+        button{
+            background-color: teal;
+            margin-right: 10px;
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            color: white;
+
+            :hover{
+                background-color: blue;
+            }
+        }
+    }
 }
